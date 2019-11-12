@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Node Inspector",
+            "type": "node",
+            "request": "launch",
+            "runtimeArgs": [
+                "--nolazy",
+                "-r",
+                "ts-node/register"
+            ],
+            "args": [
+                "${workspaceRoot}/server/index.ts"
+            ],
+            "cwd": "${workspaceRoot}",
+            "outFiles": [
+                "${workspaceFolder}/dist/src/**/*.js",
+                "${workspaceFolder}/.next/server/**/*.js"
+            ],
+            "protocol": "inspector",
+            "internalConsoleOptions": "openOnSessionStart",
+            "sourceMaps": true,
+            "autoAttachChildProcesses": true,
+            "env": {
+                "TS_NODE_PROJECT": "tsconfig.server.json",
+                "TS_NODE_FILES": "true"
+            }
+        }
+    ]
+}
