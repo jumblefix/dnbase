@@ -49,6 +49,7 @@
         "copyfiles",
         "dedup",
         "dhayaec",
+        "dnbase",
         "docgen",
         "ecmascript",
         "esnext",
