@@ -26,7 +26,7 @@
     "editor.fontLigatures": true,
     "editor.emptySelectionClipboard": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
-    "workbench.editor.showTabs": true,    
+    "workbench.editor.showTabs": true,
     "cSpell.words": [
         "Dhayanandhan",
         "Monorepo",
@@ -48,6 +48,7 @@
         "codegen",
         "copyfiles",
         "dedup",
+        "devtool",
         "dhayaec",
         "dnbase",
         "docgen",
@@ -56,6 +57,7 @@
         "fastify",
         "flushall",
         "formik",
+        "fullhuman",
         "gitignore",
         "gmail",
         "graphiql",
@@ -76,6 +78,7 @@
         "prefetched",
         "preheader",
         "proviced",
+        "purgecss",
         "pursuitapp",
         "reakit",
         "rebass",
@@ -83,6 +86,8 @@
         "resave",
         "rspace",
         "slugify",
+        "stylelint",
+        "tailwindcss",
         "tsutils",
         "typeorm",
         "unfetch",
@@ -91,5 +96,7 @@
         "wcss",
         "woff",
         "zeit"
-    ]
+    ],
+    "css.validate": false,
+    "tailwindCSS.emmetCompletions": true
 }
