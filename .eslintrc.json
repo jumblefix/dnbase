@@ -56,7 +56,8 @@
         "@typescript-eslint/explicit-member-accessibility": "off",
         "quotes": "off",
         "@typescript-eslint/no-unused-vars": "error",
-        "react/jsx-props-no-spreading": "off"
+        "react/jsx-props-no-spreading": "off",
+        "@typescript-eslint/camelcase": "off"
     },
     "overrides": []
 }

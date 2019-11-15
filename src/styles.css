@@ -6,6 +6,10 @@
 @tailwind components;
 @tailwind utilities;
 
+a {
+  color: deepskyblue;
+}
+
 .hero {
   width: 100%;
   color: #333;

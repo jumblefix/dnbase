@@ -6,7 +6,7 @@ const UserCard = () => {
             <div className="sm:flex sm:items-center px-6 lg:py-4 py-2">
                 <img
                     className="block mx-auto sm:mx-0 sm:flex-shrink-0 h-16 sm:h-24 rounded-full"
-                    src="https://randomuser.me/api/portraits/women/17.jpg"
+                    src="https://randomuser.me/api/portraits/women/14.jpg"
                     alt="Woman's Face"
                 />
                 <div className="mt-4 sm:mt-0 sm:ml-4 text-center sm:text-left">
