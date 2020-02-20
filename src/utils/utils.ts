@@ -3,3 +3,9 @@ export const addAll = (...args: number[]) => {
 };
 
 export const add = (a: number, b: number) => a + b;
+
+export const reverseStr = (str: string) =>
+    str
+        .split('')
+        .reverse()
+        .join('');

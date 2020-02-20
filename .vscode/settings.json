@@ -1,18 +1,8 @@
 {
     "editor.formatOnSave": false,
-    "eslint.validate": [
-        "javascript",
-        "javascriptreact",
-        {
-            "language": "typescript",
-            "autoFix": true
-        },
-        {
-            "language": "typescriptreact",
-            "autoFix": true
-        }
-    ],
-    "eslint.autoFixOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
     "typescript.preferences.importModuleSpecifier": "relative",
     "git.enableSmartCommit": true,
     "files.exclude": {

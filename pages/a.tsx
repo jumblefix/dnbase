@@ -1,5 +1,5 @@
 import React from 'react';
-import { addAll } from '../src/utils/utils';
+import { addAll, reverseStr } from '../src/utils/utils';
 import UserCard from '../src/components/UserCard/UserCard';
 import { Text, Title, Headline } from '../src/components/Text/Text';
 
@@ -7,7 +7,7 @@ const A = () => (
     <div>
         <p>1,2,3</p>
         <p>{addAll(1, 2, 3)}</p>
-        <p>Hello world!</p>
+        <p>{reverseStr('Hello World!')}</p>
         <p className="text-red-700">Red Text</p>
         <p className="text-green-700">Red Text</p>
         <p className="text-orange-700">Red Text</p>
