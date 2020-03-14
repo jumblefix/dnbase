@@ -4,7 +4,7 @@ import Button from '../src/components/Button/Button';
 
 const Home = () => (
     <div>
-        <ul>
+        <ul className="text-orange-100">
             <li>
                 <Link href="/a" as="/a">
                     <a href="/">a</a>
@@ -22,7 +22,9 @@ const Home = () => (
             </li>
             <li>
                 <Link href="/admin/[admin_slug]" as="/admin/products">
-                    <a href="/admin/products">Products</a>
+                    <a className="text-orange" href="/admin/products">
+                        Products
+                    </a>
                 </Link>
             </li>
             <li>

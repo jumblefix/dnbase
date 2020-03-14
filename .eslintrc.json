@@ -42,6 +42,17 @@
     },
     "rules": {
         "prettier/prettier": "error",
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "mjs": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never",
+            }
+        ],
         "react/jsx-filename-extension": [
             1,
             {
