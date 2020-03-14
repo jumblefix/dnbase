@@ -50,7 +50,7 @@
                 "mjs": "never",
                 "jsx": "never",
                 "ts": "never",
-                "tsx": "never",
+                "tsx": "never"
             }
         ],
         "react/jsx-filename-extension": [
