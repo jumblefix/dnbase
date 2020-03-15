@@ -5,8 +5,8 @@ export default [
         imgAlt: 'Banner',
         price: '$55.88',
         strikePrice: '$60.00',
-        productDescription: '128gb Aura Black Unlocked',
-        productName: 'Galaxy S10',
+        description: '128gb Aura Black Unlocked',
+        name: 'Galaxy S10',
         slug: 'galaxy-s10',
     },
     {
@@ -15,8 +15,8 @@ export default [
         imgAlt: 'Banner',
         price: '$35.88',
         strikePrice: '$50.00',
-        productDescription: '256gb Aura Black Unlocked',
-        productName: 'Galaxy Note10',
+        description: '256gb Aura Black Unlocked',
+        name: 'Galaxy Note10',
         slug: 'galaxy-note10',
     },
     {
@@ -25,8 +25,8 @@ export default [
         imgAlt: 'Banner',
         price: '$55.88',
         strikePrice: '$60.00',
-        productDescription: '128gb Aura Blue Unlocked',
-        productName: 'Galaxy Note10+',
+        description: '128gb Aura Blue Unlocked',
+        name: 'Galaxy Note10+',
         slug: 'galaxy-note10+',
     },
     {
@@ -35,8 +35,8 @@ export default [
         imgAlt: 'Banner',
         price: '$95.88',
         strikePrice: '$99.00',
-        productDescription: '1Tb Aura Black Unlocked',
-        productName: 'Note9',
+        description: '1Tb Aura Black Unlocked',
+        name: 'Note9',
         slug: 'galaxy-note9',
     },
 ];

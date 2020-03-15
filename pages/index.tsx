@@ -30,8 +30,8 @@ const Home = () => (
                             imgAlt={i.imgAlt}
                             price={i.price}
                             strikePrice={i.strikePrice}
-                            productDescription={i.productDescription}
-                            productName={i.productName}
+                            description={i.description}
+                            name={i.name}
                         />
                     </a>
                 </Link>
