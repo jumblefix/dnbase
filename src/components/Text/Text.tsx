@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface TextProps {
-    children: React.ReactNode;
+    children: React.ReactChild;
 }
 
 export const Text = ({ children }: TextProps) => {

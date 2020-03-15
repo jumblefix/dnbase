@@ -1,60 +1,41 @@
 import React from 'react';
 import Link from 'next/link';
-import Button from '../src/components/Button/Button';
+import Card from '../src/components/Card/Card';
+import products from '../src/data/products';
 
 const Home = () => (
-    <div>
-        <ul className="text-orange-100">
-            <li>
-                <Link href="/a" as="/a">
-                    <a href="/">a</a>
-                </Link>
-            </li>
-            <li>
-                <Link href="/b" as="/b">
-                    <a href="/">b</a>
-                </Link>
-            </li>
-            <li>
-                <Link href="/admin">
-                    <a href="/admin">Home</a>
-                </Link>
-            </li>
-            <li>
-                <Link href="/admin/[admin_slug]" as="/admin/products">
-                    <a className="text-orange" href="/admin/products">
-                        Products
+    <div className="container mx-auto">
+        <h1 className="text-center text-lg p-1 lg:text-left">Welcome</h1>
+        <div className="bg-red-500 sm:bg-green-500 md:bg-blue-500 lg:bg-pink-500 xl:bg-teal-500 h-32" />
+        <div className="bg-gray-200 h-auto">
+            <div className="flex">
+                <div className="flex-1 bg-gray-600 px-4 py-4 text-center text-white">One</div>
+                <div className="flex-1 bg-gray-600 px-4 py-4 text-center text-white">Two</div>
+                <div className="flex-1 bg-gray-600 px-4 py-4 text-center text-white">Three</div>
+            </div>
+        </div>
+        <div className="px-2 py-1 md:px-4 lg:px-4">
+            <img
+                className="block mx-auto sm:mx-0 sm:flex-shrink-0 h-16 sm:h-24 rounded-full"
+                src="/img/17.jpg"
+                alt="Woman's Face"
+            />
+        </div>
+        <div className="flex flex-col md:flex-row lg:flex-row items-stretch justify-start">
+            {products.map(i => (
+                <Link key={i.id} href="/post/[slug]" as={`/post/${i.slug}`}>
+                    <a href={`/post/${i.slug}`}>
+                        <Card
+                            imgSrc={i.imgSrc}
+                            imgAlt={i.imgAlt}
+                            price={i.price}
+                            strikePrice={i.strikePrice}
+                            productDescription={i.productDescription}
+                            productName={i.productName}
+                        />
                     </a>
                 </Link>
-            </li>
-            <li>
-                <Link href="/" as="/">
-                    <a href="/">Back</a>
-                </Link>
-            </li>
-        </ul>
-        <Button title="Hello World!" />
-        <div className="md:flex m-2">
-            <div className="md:flex-shrink-0">
-                <img
-                    className="rounded-lg m-auto"
-                    src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=448&q=80"
-                    alt="Woman paying for a purchase"
-                />
-            </div>
-            <div className="mt-4 md:mt-0 md:ml-6">
-                <div className="uppercase tracking-wide text-sm text-indigo-600 font-bold">Marketing</div>
-                <a
-                    href="/"
-                    className="block mt-1 text-blue-900 text-lg leading-tight font-semibold text-gray-900 hover:underline"
-                >
-                    Finding customers for your new business
-                </a>
-                <p className="mt-2 text-gray-600">
-                    Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find
-                    your first customers.
-                </p>
-            </div>
+            ))}
         </div>
     </div>
 );
